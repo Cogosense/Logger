@@ -14,8 +14,7 @@ node('docker') {
 
     stage ('Checkout Source') {
         deleteDir()
-        checkout scm
-        getUtils()
+        doCheckout()
         // load pipeline utility functions
         Utils = load "utils/Utils.groovy"
         buildLabel = Utils.&getBuildLabel()
@@ -80,7 +79,21 @@ node('docker') {
     }
 }
 
-def getUtils() {
+def doCheckout() {
+    // Required because default behaviour changed in git plugin v3.4.0
+    // noTags changed from false to true.
+    // Reguires script approval for following methods:
+    // method hudson.plugins.git.GitSCM getBranches
+    // method hudson.plugins.git.GitSCM getUserRemoteConfigs
+    // method hudson.plugins.git.GitSCMBackwardCompatibility getExtensions
+
+    checkout([
+        $class: 'GitSCM',
+        branches: scm.branches,
+        extensions: scm.extensions + [[$class: 'CloneOption', depth: 0, noTags: false, reference: '', shallow: false]],
+        userRemoteConfigs: scm.userRemoteConfigs
+    ])
+
     // Load the SCM util scripts
     checkout([$class: 'GitSCM',
         branches: [[name: "*/${env.BRANCH_NAME}"]],
