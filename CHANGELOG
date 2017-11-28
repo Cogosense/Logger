@@ -1,0 +1,11 @@
+
+Production 4.4.1 created on Tue 28 Nov 2017 15:17:13 PST
+================================================================================
+9be5faf: steve.williams@telxio.com               : correct docker image tagging
+71c46bc: steve.williams@telxio.com               : add support to push devprd, opsqa or opsprd tagged versions
+1744158: steve.williams@telxio.com               : fix Jenkins file git checkout step
+11aeb0d: steve.williams@telxio.com               : corrected readme information
+789bbf1: steve.williams@telxio.com               : push dev not devprd
+dc9c1f3: steve.williams@telxio.com               : correct formatting
+79efbe6: steve.williams@telxio.com               : add readme
+9bc9044: steve.williams@telxio.com               : initial commit
