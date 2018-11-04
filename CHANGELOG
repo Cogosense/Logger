@@ -9,3 +9,7 @@ Production 4.4.1 created on Tue 28 Nov 2017 15:17:13 PST
 dc9c1f3: steve.williams@telxio.com               : correct formatting
 79efbe6: steve.williams@telxio.com               : add readme
 9bc9044: steve.williams@telxio.com               : initial commit
+
+Production 4.4.2 created on Sun  4 Nov 2018 15:11:45 PST
+================================================================================
+69eaf8d: steve.williams@telxio.com               : Unable to start container on newer docker systems
