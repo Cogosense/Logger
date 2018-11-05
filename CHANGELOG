@@ -17,3 +17,7 @@ Production 4.4.2 created on Sun  4 Nov 2018 15:11:45 PST
 Production 4.4.3 created on Sun  4 Nov 2018 22:15:34 PST
 ================================================================================
 6d8feca: steve.williams@telxio.com               : Remove volume for /var/log
+
+Production 4.4.4 created on Sun  4 Nov 2018 22:32:55 PST
+================================================================================
+3b7dc97: steve.williams@telxio.com               : Still fails deployment to PAALP crossroads
