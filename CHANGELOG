@@ -13,3 +13,7 @@ dc9c1f3: steve.williams@telxio.com               : correct formatting
 Production 4.4.2 created on Sun  4 Nov 2018 15:11:45 PST
 ================================================================================
 69eaf8d: steve.williams@telxio.com               : Unable to start container on newer docker systems
+
+Production 4.4.3 created on Sun  4 Nov 2018 22:15:34 PST
+================================================================================
+6d8feca: steve.williams@telxio.com               : Remove volume for /var/log
