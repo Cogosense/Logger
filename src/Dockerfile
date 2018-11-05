@@ -15,7 +15,6 @@ COPY rsyslog.conf /etc/rsyslog.conf
 COPY rsyslog.sh /var/lib/rsyslog/rsyslog.sh
 
 WORKDIR /var/lib/rsyslog
-VOLUME ["/logger"]
 EXPOSE 514
 ENTRYPOINT ["/bin/tini", "--"]
 CMD ["sh", "./rsyslog.sh"]
