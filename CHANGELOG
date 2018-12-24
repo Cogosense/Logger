@@ -21,3 +21,9 @@ Production 4.4.3 created on Sun  4 Nov 2018 22:15:34 PST
 Production 4.4.4 created on Sun  4 Nov 2018 22:32:55 PST
 ================================================================================
 3b7dc97: steve.williams@telxio.com               : Still fails deployment to PAALP crossroads
+
+Production 4.4.5 created on Mon 24 Dec 2018 00:28:37 GMT
+================================================================================
+84eb027: steve.williams@telxio.com               : Built Docker Images Are Tagged With null
+7125f0b: steve.williams@telxio.com               : 2 instances of docker system prune causes build to fail\n\nrevert to JOB_ID tag for uniquesness
+718283c: steve.williams@telxio.com               : Clean up docker using system prune
